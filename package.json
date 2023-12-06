@@ -1,0 +1,25 @@
+{
+  "name": "shapely-logos",
+  "version": "1.0.0",
+  "description": "This application will make your simple logo dreams come true! Once you enter in your information, this application will generate a new logo for you based on your responses!",
+  "main": "index.js",
+  "scripts": {
+    "test": "Chocolate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PotionSela/Shapely-Logos.git"
+  },
+  "keywords": [
+    "logo-generator",
+    "command-line",
+    "svg",
+    "nodejs"
+  ],
+  "author": "Gisela Mata",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PotionSela/Shapely-Logos/issues"
+  },
+  "homepage": "https://github.com/PotionSela/Shapely-Logos#readme"
+}
