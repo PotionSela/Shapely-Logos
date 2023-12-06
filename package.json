@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/PotionSela/Shapely-Logos/issues"
   },
-  "homepage": "https://github.com/PotionSela/Shapely-Logos#readme"
+  "homepage": "https://github.com/PotionSela/Shapely-Logos#readme",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.12",
+    "svg2png": "^4.1.1"
+  }
 }
