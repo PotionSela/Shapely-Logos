@@ -1,6 +1,9 @@
+// Importing inquirer
 import inquirer from 'inquirer';
 
-inquirer
+
+// Questions to have the user input
+inquirer  
     .prompt([
         {
             type: 'input',
@@ -21,15 +24,16 @@ inquirer
         {
             type: 'input',
             name: 'logoletters',
-            message: 'What color do you want your three letter logo to be?',
+            message: 'What do you want your three letter logo to be?',
         },
     ])
+    // Have the answers show up
     .then((answers) => {
         console.info('Answers: ', answers);
         //Calling the init function
-        init();
+        init(answers);
     });
-
+// function for initialization logic
 function init() {
-    console.log('Initialization logic goes here')
+    console.log('Initialization logic goes here');
 }
