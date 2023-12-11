@@ -50,5 +50,15 @@ function init(answers) {
     // Save the SVG content to a file
     const svgFileName = 'logo.svg';
     fs.writeFileSync(svgFileName, svgContent);
-    console.log('Generated ${svgFileName}');
+    console.log(`Generated ${svgFileName}`);
+
+    // Convert the SVG file to PNG
+    const pngFileName = 'logo.png';
+    svg2png(svgFileName, pngFileName, (err) => {
+        if (err) {
+            console.error('Error converting SVG to PNG', err);
+        } else {
+            console.log(`Converted ${svgFileName} to ${pngFileName}`)
+        }
+    })
 }
