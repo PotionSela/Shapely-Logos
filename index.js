@@ -1,7 +1,7 @@
 // Importing inquirer
 import inquirer from 'inquirer';
 
-// Importing fs
+// Importing fs (File System)
 import fs from 'fs';
 
 // Importing svg2png
