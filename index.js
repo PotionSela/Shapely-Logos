@@ -60,5 +60,14 @@ function init(answers) {
         } else {
             console.log(`Converted ${svgFileName} to ${pngFileName}`)
         }
-    })
+    });
+}
+
+// Function to generate SVG content
+function generateSVG(answers) {
+    // Implement the logic to generate SVG content based on user answers
+    let svgContent = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">`;
+
+    svgContent += `</svg>`;
+    return svgContent;
 }
