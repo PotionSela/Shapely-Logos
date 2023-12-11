@@ -1,6 +1,12 @@
 // Importing inquirer
 import inquirer from 'inquirer';
 
+// Importing fs
+import fs from 'fs';
+
+// Importing svg2png
+import svg2png from 'svg2png';
+
 
 // Questions to have the user input
 inquirer  
@@ -33,7 +39,16 @@ inquirer
         //Calling the init function
         init(answers);
     });
+
 // function for initialization logic
-function init() {
+function init(answers) {
     console.log('Initialization logic goes here');
+
+    // Generate SVG content based on user answers
+    const svgContent = generateSVG(answers);
+
+    // Save the SVG content to a file
+    const svgFileName = 'logo.svg';
+    fs.writeFileSync(svgFileName, svgContent);
+    console.log('Generated ${svgFileName}');
 }
