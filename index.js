@@ -31,5 +31,17 @@ function writeTofile(fileName, answers) {
         svgString += `<rect x="150" y="40" width="160" height="160" fill="${answers.shapeBackgroundColor}" />`;
     }
 
-    
+    // <text> tag gives rise to text alignment, text content, 
+    // and text color taken in from the user prompt and give default font size of "40"
+    svgString += `<text x="150" y="130" text-anchor="middle" font-size="40" fill="${answers.textColor}" >${answer.text}</text`;
+    // Closing the </g> tag
+    svgString += "</g>";
+    // Closing </svg> tag
+    svgString += "</svg>";
+
+    // Using fs module to generate svg file, takes in file name given in the prompUser function
+    // the svg string, and a ternary operator, handling logging errors
+    fs.writeFile(fileName, svgString, (err) => {
+        err ? console.log(err) : console.log("Generated logo.svg");
+    });
 }
