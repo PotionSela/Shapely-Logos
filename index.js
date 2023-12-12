@@ -5,7 +5,7 @@ import inquirer from 'inquirer';
 import fs from 'fs';
 
 // Importing classes from lib/shapes directory
-const { Circle, Triangle, Square } = require("./lib/shapes")
+const { Triangle, Square, Circle } = require("./lib/shapes.js");
 
 // Function to write the SVG file using users answers
 function writeTofile(fileName, answers) {
