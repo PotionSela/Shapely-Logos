@@ -45,3 +45,46 @@ function writeTofile(fileName, answers) {
         err ? console.log(err) : console.log("Generated logo.svg");
     });
 }
+
+// Utilizing inquirer to prompt the user for questions about the logo
+function promptUser() {
+    inquirer
+    .prompt([
+        // Questions for the User
+        // Three character logo text prompt
+        {
+            type: 'input',
+            name: 'text',
+            message: 'What do you want your logo to be? (Only three characters allowed)',
+        },
+        // Text color prompt
+        {
+            type: 'input',
+            name: 'textColor',
+            message: 'Choose the text color',
+        },
+        // Shape choices prompt
+        {
+            type: 'rawlist',
+            name: 'shape',
+            message: 'What is your prefered shape?',
+            choices: [ 'Circle', 'Triangle', 'Square'],
+        },
+        // Logo color prompt
+        {
+            type: 'input',
+            name: 'shapeBackgroundColor',
+            message: 'What would you like the background color of your logo to be?'
+        },
+    ])
+    .then((answers) => {
+        // Error handling for text prompt (user must enter 3 characters or less for logo to generate)
+        if (answers.text.length > 3) {
+            console.log("Must enter a value of no more than 3 characters please");
+            promptUser();
+        } else {
+            // Write file function called to generate SVG file
+            writeTofile("logo.svg", answers);
+        }
+    });
+}
