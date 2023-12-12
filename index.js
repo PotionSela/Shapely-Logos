@@ -88,3 +88,6 @@ function promptUser() {
         }
     });
 }
+
+// Calling the promptUser function so inquirer prompts initiate
+promptUser();
