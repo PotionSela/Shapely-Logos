@@ -5,7 +5,7 @@ import inquirer from 'inquirer';
 import fs from 'fs';
 
 // Importing classes from lib/shapes directory
-const { Triangle, Square, Circle } = require("./lib/shapes.js");
+import { Triangle, Square, Circle } from "./lib/shapes.js";
 
 // Function to write the SVG file using users answers
 function writeTofile(fileName, answers) {
@@ -33,7 +33,7 @@ function writeTofile(fileName, answers) {
 
     // <text> tag gives rise to text alignment, text content, 
     // and text color taken in from the user prompt and give default font size of "40"
-    svgString += `<text x="150" y="130" text-anchor="middle" font-size="40" fill="${answers.textColor}" >${answer.text}</text`;
+    svgString += `<text x="150" y="130" text-anchor="middle" font-size="40" fill="${answers.textColor}" >${answers.text}</text`;
     // Closing the </g> tag
     svgString += "</g>";
     // Closing </svg> tag
