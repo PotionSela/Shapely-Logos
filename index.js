@@ -42,7 +42,36 @@ function writeTofile(fileName, answers) {
     // Using fs module to generate svg file, takes in file name given in the prompUser function
     // the svg string, and a ternary operator, handling logging errors
     fs.writeFile(fileName, svgString, (err) => {
-        err ? console.log(err) : console.log("Generated logo.svg");
+        if (err) {
+            console.log(err);
+        } else {
+            console.log("Generated logo.svg");
+            // Create HTML file content with inline SVG
+            const htmlContent = `
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Your Shapely Logo</title>
+                </head>
+                <body>
+                    <div>
+                        ${svgString}
+                    </div>
+                </body>
+                </html>
+            `;
+            // Write the HTML file
+            const htmlFileName = "index.html";
+            fs.writeFile(htmlFileName, htmlContent, (htmlErr) => {
+                if (htmlErr) {
+                    console.log(htmlErr);
+                } else {
+                    console.log(`Generated ${htmlFileName}`);
+                }
+            });
+        }
     });
 }
 
@@ -80,7 +109,7 @@ function promptUser() {
     .then((answers) => {
         // Error handling for text prompt (user must enter 3 characters or less for logo to generate)
         if (answers.text.length > 3) {
-            console.log("Must enter a value of no more than 3 characters please");
+            console.log("Must enter a no more than 3 characters please");
             promptUser();
         } else {
             // Write file function called to generate SVG file
