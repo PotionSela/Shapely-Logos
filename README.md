@@ -24,3 +24,13 @@ This application enables freelance web developers to create simple logos for the
 ### Live Screen Recording of Application Functionality
 [Link to Screen Recording](https://drive.google.com/file/d/1PzrVTDdUa1pXKIKy05KZxdHyMVpudFAI/view)
 
+### Screenshots
+**Examples of Generated Logos:**
+![example-logo1](./images/example2.png)
+![example-logo2](./images/example3.png)
+![example-logo3](./images/example4.png)
+
+**Screenshots of application:**
+![example-1](./images/example1.png)
+![example-2](./images/example5.png)
+
