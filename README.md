@@ -12,7 +12,6 @@ This application will make your simple logo dreams come true! Once you enter in 
 - [Features](#features)
 - [Usage Information](#usage-information)
 - [Contribution Guidelines](#contribution-guidelines)
-- [Test Instructions](#test-instructions)
 - [License](#license)
 - [Questions](#questions)
 
