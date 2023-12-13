@@ -28,7 +28,7 @@ function writeTofile(fileName, answers) {
         svgString += `<polygon points="150, 18 244, 182 56, 182" fill="${answers.shapeBackgroundColor}" />`;
     } else {
         shapeChoice = new Square();
-        svgString += `<rect x="150" y="40" width="160" height="160" fill="${answers.shapeBackgroundColor}" />`;
+        svgString += `<rect x="40" y="40" width="160" height="160" fill="${answers.shapeBackgroundColor}" />`;
     }
 
     // <text> tag gives rise to text alignment, text content, 
