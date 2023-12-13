@@ -56,3 +56,10 @@ This project is powered by Node.js v16, utilizes inquirer v9.2.12 (node package 
 ## Features
 
 Features of this application include the user's ability to generate logos quickly and easily through the use of SVG files, entirely from the command line. No UI (user interface) is needed, and no front-end tools are required.
+
+
+## Usage Information
+
+To run this application, use the command line to navigate to the directory of the application, install all dependencies (`npm i`), then type the command `node index.js`. You will then be taken through a series of questions. Once all questions have been answered properly, a message will display to the command line, telling you your logo has been generated. Find your new logo in the newly generated HTML and SVG file.
+
+For unit testing instructions, navigate to the [Test Instructions](#test-instructions) section.
