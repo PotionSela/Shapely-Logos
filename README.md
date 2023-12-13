@@ -25,7 +25,7 @@ This application enables freelance web developers to create simple logos for the
 [Link to Screen Recording](https://drive.google.com/file/d/1PzrVTDdUa1pXKIKy05KZxdHyMVpudFAI/view)
 
 ### Screenshots
-**###Examples of Generated Logos:**
+**Examples of Generated Logos:**
 
 ![example-logo1](./images/example2.png)
 ![example-logo2](./images/example3.png)
@@ -37,3 +37,6 @@ This application enables freelance web developers to create simple logos for the
 ![example-1](./images/example1.png)
 ![example-2](./images/example5.png)
 
+## Technologies Used
+
+This project is powered by Node.js v16, utilizes inquirer v9.2.12 (node package manager), and the file system module (node package manager). It also employs jest v29.7.0 (node package manager) for unit testing.
