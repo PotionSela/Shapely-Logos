@@ -61,5 +61,9 @@ Features of this application include the user's ability to generate logos quickl
 ## Usage Information
 
 To run this application, use the command line to navigate to the directory of the application, install all dependencies (`npm i`), then type the command `node index.js`. You will then be taken through a series of questions. Once all questions have been answered properly, a message will display to the command line, telling you your logo has been generated. Find your new logo in the newly generated HTML and SVG file.
-
 For unit testing instructions, navigate to the [Test Instructions](#test-instructions) section.
+
+
+## Contribution Guidelines
+
+Open to collaboration. If you choose to do so, open an issue and modify any changes you would like to see on a feature branch and wait for approval before merging to the main branch.
