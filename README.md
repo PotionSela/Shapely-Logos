@@ -9,7 +9,6 @@ This application will make your simple logo dreams come true! Once you enter in 
 - [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Credits](#credits)
 - [Features](#features)
 - [Usage Information](#usage-information)
 - [Contribution Guidelines](#contribution-guidelines)
@@ -52,3 +51,8 @@ This project is powered by Node.js v16, utilizes inquirer v9.2.12 (node package 
 4. Once Node.js v16 is installed, in the terminal, run the command `npm init -y` to initialize and create a `package.json` where project files will be stored.
 5. Next, use the terminal to run the command `npm i` to install the dependencies associated with this application. Developers may need to install inquirer and jest directly from the command line. To do so, the command for inquirer will be `npm i inquirer@9.2.12` to install v9.2.12 of inquirer, and `npm i jest` to install the latest version of jest.
 6. To run the application, within the terminal, type the command `node index.js`.
+
+
+## Features
+
+Features of this application include the user's ability to generate logos quickly and easily through the use of SVG files, entirely from the command line. No UI (user interface) is needed, and no front-end tools are required.
