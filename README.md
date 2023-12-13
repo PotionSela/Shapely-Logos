@@ -24,6 +24,7 @@ This application enables freelance web developers to create simple logos for the
 ### Live Screen Recording of Application Functionality
 [Link to Screen Recording](https://drive.google.com/file/d/1PzrVTDdUa1pXKIKy05KZxdHyMVpudFAI/view)
 
+
 ### Screenshots
 **Examples of Generated Logos:**
 
@@ -37,6 +38,17 @@ This application enables freelance web developers to create simple logos for the
 ![example-1](./images/example1.png)
 ![example-2](./images/example5.png)
 
+
 ## Technologies Used
 
 This project is powered by Node.js v16, utilizes inquirer v9.2.12 (node package manager), and the file system module (node package manager). It also employs jest v29.7.0 (node package manager) for unit testing.
+
+
+## Installation
+
+1. Clone the repo: `git clone https://github.com/PotionSela/Shapely-Logos.git`
+2. Open in VS Code. If you do not have VS Code, install it.
+3. Using the terminal, install Node.js v16.
+4. Once Node.js v16 is installed, in the terminal, run the command `npm init -y` to initialize and create a `package.json` where project files will be stored.
+5. Next, use the terminal to run the command `npm i` to install the dependencies associated with this application. Developers may need to install inquirer and jest directly from the command line. To do so, the command for inquirer will be `npm i inquirer@9.2.12` to install v9.2.12 of inquirer, and `npm i jest` to install the latest version of jest.
+6. To run the application, within the terminal, type the command `node index.js`.
