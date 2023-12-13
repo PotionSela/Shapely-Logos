@@ -20,7 +20,7 @@ function writeTofile(fileName, answers) {
 
     // Conditional check takes users input from the choices and then add shapes properties to SVG string
     let shapeChoice;
-    if (answers.shape === "Cirlce") {
+    if (answers.shape === "Circle") {
         shapeChoice = new Circle();
         svgString += `<circle cx="150" cy="115" r="80" fill="${answers.shapeBackgroundColor}" />`;
     } else if (answers.shape === "Triangle") {
